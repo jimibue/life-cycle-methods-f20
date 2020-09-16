@@ -3,6 +3,7 @@ import "./App.css";
 import { Button, Container } from "semantic-ui-react";
 import Clock from "./Clock";
 import Data from "./Data";
+import Demo from "./Demo";
 
 class App extends React.Component {
   state = { showClock: true, showData: true };
@@ -15,6 +16,7 @@ class App extends React.Component {
     const { showClock, showData } = this.state;
     return (
       <Container style={styles.container}>
+        <Demo />
         {showClock && <Clock />}
         <Button onClick={() => this.setState({ showClock: !showClock })}>
           {showClock ? "hide clock" : "show clock"}
