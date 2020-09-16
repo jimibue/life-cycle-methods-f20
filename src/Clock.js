@@ -14,12 +14,12 @@ class Clock extends React.Component {
     console.log("mounted");
     this.ticker = setInterval(this.tick, 1000);
   }
-  componentDidUpdate(prevProps, prevState) {
-    console.log("compentDidUpdate");
-    // console.log(this.state);
-    // console.log(prevProps);
-    // console.log(prevState);
-  }
+  // componentDidUpdate(prevProps, prevState) {
+  //   console.log("compentDidUpdate");
+  //   // console.log(this.state);
+  //   // console.log(prevProps);
+  //   // console.log(prevState);
+  // }
 
   componentWillUnmount() {
     console.log("unmounted");
@@ -27,7 +27,7 @@ class Clock extends React.Component {
     // any cleanup we want to do do in this method
   }
   render() {
-    console.log("render");
+    // console.log("render");
     return (
       <div>
         <h1>{this.state.date.toLocaleTimeString()}</h1>
